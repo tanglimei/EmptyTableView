@@ -15,6 +15,7 @@
 		2B57BB5E1CE8DE82008B53FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B57BB5C1CE8DE82008B53FE /* LaunchScreen.storyboard */; };
 		2B57BB691CE8DE82008B53FE /* FSTableViewPlaceholderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B57BB681CE8DE82008B53FE /* FSTableViewPlaceholderTests.m */; };
 		2B57BB741CE8DE82008B53FE /* FSTableViewPlaceholderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B57BB731CE8DE82008B53FE /* FSTableViewPlaceholderUITests.m */; };
+		2B57BB841CE8DEFF008B53FE /* UITableView+FSEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B57BB831CE8DEFF008B53FE /* UITableView+FSEmptyView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,10 @@
 		2B57BB6F1CE8DE82008B53FE /* FSTableViewPlaceholderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FSTableViewPlaceholderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B57BB731CE8DE82008B53FE /* FSTableViewPlaceholderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSTableViewPlaceholderUITests.m; sourceTree = "<group>"; };
 		2B57BB751CE8DE82008B53FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B57BB821CE8DEFF008B53FE /* UITableView+FSEmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FSEmptyView.h"; sourceTree = "<group>"; };
+		2B57BB831CE8DEFF008B53FE /* UITableView+FSEmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FSEmptyView.m"; sourceTree = "<group>"; };
+		2B57BB851CE8E2FC008B53FE /* FSEmptyTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSEmptyTableViewDelegate.h; sourceTree = "<group>"; };
+		2B773BFF1CE990FF00CE2F51 /* FSEmptyTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSEmptyTableView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +106,7 @@
 		2B57BB4D1CE8DE82008B53FE /* FSTableViewPlaceholder */ = {
 			isa = PBXGroup;
 			children = (
+				2B57BB811CE8DEAF008B53FE /* FSTableViewPlaceHolder */,
 				2B57BB511CE8DE82008B53FE /* AppDelegate.h */,
 				2B57BB521CE8DE82008B53FE /* AppDelegate.m */,
 				2B57BB541CE8DE82008B53FE /* ViewController.h */,
@@ -138,6 +144,17 @@
 				2B57BB751CE8DE82008B53FE /* Info.plist */,
 			);
 			path = FSTableViewPlaceholderUITests;
+			sourceTree = "<group>";
+		};
+		2B57BB811CE8DEAF008B53FE /* FSTableViewPlaceHolder */ = {
+			isa = PBXGroup;
+			children = (
+				2B57BB821CE8DEFF008B53FE /* UITableView+FSEmptyView.h */,
+				2B57BB831CE8DEFF008B53FE /* UITableView+FSEmptyView.m */,
+				2B57BB851CE8E2FC008B53FE /* FSEmptyTableViewDelegate.h */,
+				2B773BFF1CE990FF00CE2F51 /* FSEmptyTableView.h */,
+			);
+			path = FSTableViewPlaceHolder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +293,7 @@
 				2B57BB561CE8DE82008B53FE /* ViewController.m in Sources */,
 				2B57BB531CE8DE82008B53FE /* AppDelegate.m in Sources */,
 				2B57BB501CE8DE82008B53FE /* main.m in Sources */,
+				2B57BB841CE8DEFF008B53FE /* UITableView+FSEmptyView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +517,7 @@
 				2B57BB7A1CE8DE82008B53FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B57BB7B1CE8DE82008B53FE /* Build configuration list for PBXNativeTarget "FSTableViewPlaceholderTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +526,7 @@
 				2B57BB7D1CE8DE82008B53FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B57BB7E1CE8DE82008B53FE /* Build configuration list for PBXNativeTarget "FSTableViewPlaceholderUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +535,7 @@
 				2B57BB801CE8DE82008B53FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
